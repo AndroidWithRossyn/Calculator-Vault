@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_radians"
+            android:summary="Display angles as arc length divided by radius."
+            android:title="Use radians" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Other">
+        <Preference
+            android:key="pref_rate"
+            android:summary="Share your opinion on the Google Play store."
+            android:title="Rate Calculator v2" />
+    </PreferenceCategory>
+</PreferenceScreen>

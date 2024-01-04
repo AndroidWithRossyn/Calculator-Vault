@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginBottom="20.0dip"
+        app:errorTextAppearance="@style/CustomTextInputLayoutStyle.ErrorTextStyle"
+        app:hintTextAppearance="@style/CustomTextInputLayoutStyle.HintTextStyle">
+
+        <EditText
+            android:id="@+id/et_AlbumName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="@string/lbl_Create_Folder_hint"
+            android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

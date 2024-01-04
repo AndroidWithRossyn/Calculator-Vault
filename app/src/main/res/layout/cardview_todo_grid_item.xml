@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3.0dip"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_list_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_ToDoName"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5.0dip"
+                    android:layout_weight="1.0"
+                    android:fontFamily="@font/font"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:padding="5.0dip"
+
+                    android:singleLine="true"
+                    android:text="To Do"
+                    android:textColor="@color/black_color"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:id="@+id/iv_toDoOptions"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="13dp"
+                    android:background="@drawable/ic_more_top_bar_icon"
+                    android:padding="5.0dip"
+                    android:rotation="90" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_task1"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_weight="1.0"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/Color_Secondary_Font"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_task1c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5.0dip"
+                        android:text="✓    "
+                        android:textColor="@color/Color_Secondary_Font" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_task2"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_weight="1.0"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/Color_Secondary_Font"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_task2c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5.0dip"
+                        android:text="✓    "
+                        android:textColor="@color/Color_Secondary_Font" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_inner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/colorBorder"
+                    android:layout_width="5.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5.0dip"
+                    android:layout_marginTop="2.0dip" />
+
+                <LinearLayout
+                    android:id="@+id/ll_DateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_ToDoDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5.0dip"
+                        android:fontFamily="@font/font"
+                        android:gravity="center_vertical"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="Date: "
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/Color_Secondary_Font"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ToDoTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="2.0dip"
+                        android:fontFamily="@font/font"
+                        android:gravity="center_vertical"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="Time: "
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/Color_Secondary_Font"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

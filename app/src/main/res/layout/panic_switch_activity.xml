@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_panic_switch_TopBaar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorAppTheme"
+        android:gravity="center_vertical"
+        android:paddingTop="4.0dip"
+        android:paddingBottom="4.0dip"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="left">
+
+            <ImageButton
+                android:id="@+id/ib_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_top_bar_icon"
+                android:onClick="btnBackonClick" />
+
+            <TextView
+                android:id="@+id/lblpanic_switch_Top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="7.0dip"
+                android:text="@string/lblsetting_Setting_Panic_Switch"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/ColorWhite"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/ColorWhite"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblpanic_switch_activity_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="30.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:focusable="true"
+                    android:text="@string/lblsetting_Setting_Panic_Switch_Activity_Descr"
+                    android:textColor="@color/Color_Menu_Thumb_Font"
+                    android:textSize="17.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_flip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_flip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_marginTop="4.0dip"
+                        android:text="@string/lblFlick"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/Color_Menu_Thumb_Font"
+                        android:textSize="20.0sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/togglebtnFlick"
+                            android:layout_width="50.0dip"
+                            android:layout_height="35.0dip"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="15.0dip"
+                            android:background="@drawable/btn_toggle_on_off"
+                            android:gravity="right"
+                            android:textOff=""
+                            android:textOn="" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shake"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_shake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_marginTop="4.0dip"
+                        android:text="@string/lblShake"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/Color_Menu_Thumb_Font"
+                        android:textSize="20.0sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/togglebtnShake"
+                            android:layout_width="50.0dip"
+                            android:layout_height="35.0dip"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="15.0dip"
+                            android:background="@drawable/btn_toggle_on_off"
+                            android:gravity="right"
+                            android:textOff=""
+                            android:textOn="" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_PalmOnScreen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_PalmOnScreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_marginTop="4.0dip"
+                        android:text="@string/lblPalmOnScreen"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/Color_Menu_Thumb_Font"
+                        android:textSize="20.0sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/togglebtnPalmOnScreen"
+                            android:layout_width="50.0dip"
+                            android:layout_height="35.0dip"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="15.0dip"
+                            android:background="@drawable/btn_toggle_on_off"
+                            android:gravity="right"
+                            android:textOff=""
+                            android:textOn="" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:text="@string/lblSwitchApp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/Color_Menu_Thumb_Font"
+                    android:textSize="20.0sp" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioChooseSwitchApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25.0dip"
+                android:layout_marginTop="14.0dip"
+                android:layout_marginBottom="14.0dip">
+
+                <RadioButton
+                    android:id="@+id/Browser"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:button="@drawable/cb_panic_switch"
+                    android:checked="false"
+                    android:paddingLeft="40.0dip"
+                    android:text="@string/lbl_Browser"
+                    android:textColor="@color/Color_Menu_Thumb_Font"
+                    android:textSize="17.0sp"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/HomeScreen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/cb_panic_switch"
+                    android:checked="true"
+                    android:paddingLeft="25.0dip"
+                    android:text="@string/lbl_HomeScreen"
+                    android:textColor="@color/Color_Secondary_Font"
+                    android:textSize="17.0sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

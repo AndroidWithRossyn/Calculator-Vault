@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/banner"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+
+        <ImageView
+            android:id="@+id/ib_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_top_back_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/fontmedium"
+            android:text="About"
+            android:textColor="@color/black_color"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_logosection"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="60.0dip">
+
+                    <ImageView
+                        android:layout_width="110.0dip"
+                        android:layout_height="110.0dip"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="0.0dip"
+                        android:background="@mipmap/ic_launcher_foreground" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10.0dip"
+                        android:fontFamily="@font/font"
+                        android:gravity="center"
+                        android:shadowColor="@color/white"
+                        android:shadowDx="2.0"
+                        android:shadowDy="2.0"
+                        android:shadowRadius="2.0"
+                        android:text="@string/app_name"
+                        android:textColor="@color/black_color"
+                        android:textSize="30.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_App_Version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:fontFamily="@font/font"
+
+                    android:text="@string/lbl_App_Version"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/ColorAppTheme"
+                    android:textSize="18.0sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_visit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20.0dip"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lbl_vist_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/font"
+                            android:text="@string/Visit_title"
+
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/Color_Menu_Thumb_Font"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:id="@+id/lbl_vist_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:fontFamily="@font/font"
+
+                            android:text="@string/Visit_value"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/Color_Secondary_Font"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_support"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20.0dip"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lbl_Support_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/Support_title"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/Color_Menu_Thumb_Font"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:id="@+id/lbl_Support_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="11.0dip"
+                            android:text="@string/Support_value"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/Color_Secondary_Font"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:layout_weight="2.0"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/lyFacebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imgfacebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/fb_icon" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgfacebook"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="3.0dip"
+                            android:text="@string/lbl_facebook"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            android:textColor="@color/Color_Secondary_Font"
+                            android:textSize="14.0sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lyinsta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_toRightOf="@+id/lyFacebook">
+
+                        <ImageView
+                            android:id="@+id/imginsta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/insta_icon" />
+
+                        <TextView
+                            android:id="@+id/tv_GooglePlus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imginsta"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="3.0dip"
+                            android:text="@string/lbl_instagram"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            android:textColor="@color/Color_Secondary_Font"
+                            android:textSize="14.0sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lyTweet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12.0dip"
+                        android:layout_toRightOf="@+id/lyinsta">
+
+                        <ImageView
+                            android:id="@+id/imgtweet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/twitter_icon" />
+
+                        <TextView
+                            android:id="@+id/tv_tweet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgtweet"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="3.0dip"
+                            android:text="@string/lbl_twitter"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            android:textColor="@color/Color_Secondary_Font"
+                            android:textSize="14.0sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.1"
+                android:background="@color/Color_Menu_Thumb_Hover"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lbl_copy_write"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingBottom="5.0dip"
+                        android:text="@string/lblCopyRight"
+                        android:textColor="@color/Color_Menu_Thumb_Font"
+                        android:textSize="12.0sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

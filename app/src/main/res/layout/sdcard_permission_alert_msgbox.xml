@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_background"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_toalert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="35.0dip"
+                android:layout_height="35.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginBottom="6.0dip"
+                android:background="@drawable/alert_icon"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvalert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@+id/imageView1"
+                android:text="@string/lblAlet"
+                android:textColor="@color/Color_Secondary_Font"
+                android:textSize="20.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/Color_Menu_Thumb_Hover"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:layout_marginBottom="7.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvmessagedialogtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="@string/lblSdCardAlertMsg"
+                    android:textColor="@color/Color_Menu_Thumb_Font"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/tvmessagedialognote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="@string/lblSdCardAlertMsgNote"
+                    android:textColor="@color/Color_Menu_Thumb_Font"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkboxuninstallmsg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbalertdialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:button="@drawable/btn_import_checkbox"
+                    android:focusable="false" />
+
+                <TextView
+                    android:id="@+id/tvcheckboxtitledialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:text="@string/lblCheckboxSDCardAlertDialog"
+                    android:textColor="@color/Color_Secondary_Font"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_Cancel"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_bottom_baar_album"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_Cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12.0dip"
+                        android:paddingBottom="12.0dip"
+                        android:text="@string/lblsetting_SecurityCredentials_setpassword_Cancel"
+                        android:fontFamily="@font/font"
+                        android:textColor="@color/white"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_Ok"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_bottom_baar_album"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_Ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12.0dip"
+                        android:paddingBottom="12.0dip"
+                        android:text="@string/lblsetting_SecurityCredentials_setpassword_Continue"
+                        android:fontFamily="@font/font"
+                        android:textColor="@color/white"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

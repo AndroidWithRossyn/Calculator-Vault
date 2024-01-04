@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="80.0dip" android:width="80.0dip" android:viewportWidth="80.0" android:viewportHeight="80.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:name="Forma 1 copy 6" android:fillColor="#1a1a1a" android:pathData="m76.16 9.71 -0.18 62.29c-0.01 2.7 -2.2 4.89 -4.9 4.88l-62.36 -0.16c-2.7 -0.01 -4.89 -2.2 -4.88 -4.91l0.18 -62.29c0.01 -2.7 2.2 -4.89 4.9 -4.88l62.36 0.16c2.7 0.01 4.89 2.2 4.88 4.91zm-64.4 45.17 56.39 0.14 0.13 -42.55 -56.39 -0.14 -0.13 42.55z" />
+    <path android:name="Forma 1 copy 2" android:fillColor="#1a1a1a" android:pathData="m69.59 49.74c0 -1.73 -5.81 -6.62 -6.92 -7.94l-5.48 -4.93c-1.45 -1.53 -3.87 -1.54 -5.33 -0.01l-7.96 6.59l-12.24 -15.96c-1.39 -1.9 -4.19 -2.02 -5.72 -0.23l-13.96 17.07c-1.1 1.32 -1.71 2.98 -1.71 4.7l-0.04 15.69l59.33 -0.52l0.04 -14.44z" />
+    <path android:name="Forma 1 copy 3" android:fillColor="#1a1a1a" android:pathData="m55.96 26.67c2.47 0.01 4.48 -1.99 4.48 -4.46c0.01 -2.47 -1.99 -4.48 -4.46 -4.49c-2.47 -0.01 -4.48 1.99 -4.48 4.46c-0.01 2.47 1.99 4.48 4.46 4.48z" />
+</vector>

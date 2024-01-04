@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="delayTimeLimit">
+        <item>Until Screen Locked</item>
+        <item>15 Seconds</item>
+        <item>30 Seconds</item>
+        <item>1 Minute</item>
+        <item>3 Minute</item>
+        <item>5 Minute</item>
+    </array>
+    <array name="delayTimeLimitValue">
+        <item>@null</item>
+        <item>15</item>
+        <item>30</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+    </array>
+    <array name="wallet_drawables_list">
+        <item>@null</item>
+        <item>@drawable/credit_card1</item>
+        <item>@drawable/atm_account1</item>
+        <item>@drawable/bank_account1</item>
+        <item>@drawable/business_card1</item>
+        <item>@drawable/license1</item>
+        <item>@drawable/email_account1</item>
+        <item>@drawable/social_netwok1</item>
+        <item>@drawable/general_purpose1</item>
+        <item>@drawable/e_commerce1</item>
+        <item>@drawable/health_hygiene1</item>
+        <item>@drawable/insurance1</item>
+        <item>@drawable/web_account1</item>
+        <item>@drawable/id_card1</item>
+        <item>@drawable/passport_card1</item>
+    </array>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res/com.example.vault"
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:contentInsetStartWithNavigation="0.0dip"
+        app:popupTheme="@style/ThemeOverlay.YourApp">
+
+        <EditText
+            android:id="@+id/et_ToDoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Enter Title"
+            android:maxLength="30"
+            android:padding="5.0dip"
+            android:fontFamily="@font/font"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/black_color"
+            android:textColorHint="#464545"
+            android:textSize="18.0sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_anchor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/ll_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="10.0dip"
+                    android:text="Add item(s) to create to do list"
+                    android:textColor="@color/Color_Secondary_Font"
+                    android:textSize="16.0sp" />
+
+                <TableLayout
+                    android:id="@+id/tl_TodoTasks"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:cardUseCompatPadding="true"
+                        app:cardElevation="10dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_margin="20.0dip"
+                        android:padding="10.0dip">
+
+                        <LinearLayout
+                            android:id="@+id/ll_addTask"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="@color/blueclr">
+
+                            <TextView
+                                android:id="@+id/tv_addTask"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="10dp"
+                                android:fontFamily="@font/fontsemi"
+                                android:paddingLeft="50.0dip"
+                                android:paddingRight="50.0dip"
+                                android:text="Add"
+                                android:textColor="@android:color/white"
+                                android:textSize="20.0sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

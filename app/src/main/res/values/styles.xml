@@ -1,0 +1,138 @@
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/ColorPrimaryDark</item>
+        <item name="android:itemBackground">@color/overflow_background</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="titleTextColor">#FFFFFF</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.Dark" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="backspace">@drawable/ic_backspace_white_24dp</item>
+        <item name="panel1">@color/panel_1_dark</item>
+        <item name="panel2">@color/panel_2_dark</item>
+    </style>
+    <style name="AppTheme.Dark.Blue" parent="@style/AppTheme.Dark">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/black_color</item>
+    </style>
+    <style name="AppTheme.Dark.Cyan" parent="@style/AppTheme.Dark">
+        <item name="colorPrimary">@color/cyan</item>
+        <item name="colorPrimaryDark">@color/cyan_dark</item>
+    </style>
+    <style name="AppTheme.Dark.Gray" parent="@style/AppTheme.Dark">
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryDark">@color/gray_dark</item>
+    </style>
+    <style name="AppTheme.Dark.Green" parent="@style/AppTheme.Dark">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green_dark</item>
+    </style>
+    <style name="AppTheme.Dark.Indigo" parent="@style/AppTheme.Dark">
+        <item name="colorPrimary">@color/indigo</item>
+        <item name="colorPrimaryDark">@color/indigo_dark</item>
+    </style>
+    <style name="AppTheme.Dark.Purple" parent="@style/AppTheme.Dark">
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/purple_dark</item>
+    </style>
+    <style name="AppTheme.Dark.Red" parent="@style/AppTheme.Dark">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red_dark</item>
+    </style>
+    <style name="AppTheme.Light" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="backspace">@drawable/ic_backspace_black_24dp</item>
+        <item name="panel1">@color/panel_1_light</item>
+        <item name="panel2">@color/panel_2_light</item>
+    </style>
+    <style name="AppTheme.Light.Blue" parent="@style/AppTheme.Light">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/black_color</item>
+    </style>
+    <style name="AppTheme.Light.Cyan" parent="@style/AppTheme.Light">
+        <item name="colorPrimary">@color/cyan</item>
+        <item name="colorPrimaryDark">@color/cyan_dark</item>
+    </style>
+    <style name="AppTheme.Light.Gray" parent="@style/AppTheme.Light">
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryDark">@color/gray_dark</item>
+    </style>
+    <style name="AppTheme.Light.Green" parent="@style/AppTheme.Light">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green_dark</item>
+    </style>
+    <style name="AppTheme.Light.Indigo" parent="@style/AppTheme.Light">
+        <item name="colorPrimary">@color/indigo</item>
+        <item name="colorPrimaryDark">@color/indigo_dark</item>
+    </style>
+    <style name="AppTheme.Light.Purple" parent="@style/AppTheme.Light">
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/purple_dark</item>
+    </style>
+    <style name="AppTheme.Light.Red" parent="@style/AppTheme.Light">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red_dark</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme1" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/Color_Secondary_Font</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="AppTheme123" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:itemBackground">@color/overflow_background</item>
+    </style>
+
+
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_more_top_bar_icon</item>
+    </style>
+    <style name="PickerEditText">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:textColor">@color/ColorWhite</item>
+        <item name="android:background">@drawable/fab_label_background</item>
+    </style>
+
+    <style name="ThemeOverlay.YourApp" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@color/ColorWhite</item>
+        <item name="android:textColor">@color/ColorAppTheme</item>
+        <item name="colorPrimary">@color/ColorPrimary</item>
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+    </style>
+
+    <style name="CardView" parent="@style/Base.CardView" />
+    <style name="CardView.Dark" parent="@style/CardView">
+        <item name="cardBackgroundColor">@color/cardview_dark_background</item>
+    </style>
+    <style name="CardView.Light" parent="@style/CardView">
+        <item name="cardBackgroundColor">@color/cardview_light_background</item>
+    </style>
+    <style name="CustomTextInputLayoutStyle.ErrorTextStyle" parent="@style/TextAppearance.Design.Error">
+        <item name="android:textSize">15.0sp</item>
+    </style>
+    <style name="CustomTextInputLayoutStyle.HintTextStyle" parent="@style/TextAppearance.Design.Hint">
+        <item name="android:textSize">15.0sp</item>
+    </style>
+    <style name="DialogNoAnimation">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+    <style name="FullHeightDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

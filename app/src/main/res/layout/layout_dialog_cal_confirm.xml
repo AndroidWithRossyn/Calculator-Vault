@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aigestudio="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_Stealth_Mode_TopBaar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorAppTheme"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="left"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="8.0dip"
+            android:paddingBottom="8.0dip">
+
+            <TextView
+                android:id="@+id/lblstealth_mode_topbaar"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/font"
+                android:layout_height="wrap_content"
+                android:text="@string/lblsetting_stealth_mode_topbaar"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/White"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="310.0dip">
+
+        <RelativeLayout
+            android:id="@+id/rl_checkbox_cal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12.0dip"
+                android:gravity="center_horizontal"
+                android:text="Your calculator PIN successfully save, Now application icon is changed to "
+                android:textColor="@color/text2_color"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/img_icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/disguise_change_icon_image" />
+
+            <TextView
+                android:id="@+id/tv_heading2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_icons"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15.0dip"
+                android:gravity="center_horizontal"
+                android:text="@string/text_done_dialog_for_cal"
+                android:textColor="@color/text2_color"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/tv_for_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_heading2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_horizontal"
+                android:text="@string/for_email"
+                android:textColor="@color/red_dark"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip">
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_bottom_baar_album"
+            android:text="Done"
+            android:fontFamily="@font/font"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

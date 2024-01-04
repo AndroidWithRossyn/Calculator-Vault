@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<CategoryInfo>
+    <CategoryName>Credit Cards</CategoryName>
+    <IconIndex>1</IconIndex>
+    
+    <Field>Card Name<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Card Number<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Expiration Date<IsSecured>false</IsSecured>
+    </Field>
+    <Field>3-Digit-CVC#<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Issuing Date<IsSecured>false</IsSecured>
+    </Field>
+    <Field>PIN<IsSecured>true</IsSecured>
+    </Field>
+    <Field>Password<IsSecured>true</IsSecured>
+    </Field>
+    <Field>Start Date<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Phone No.<IsSecured>false</IsSecured>
+    </Field>
+    <Field>URL<IsSecured>false</IsSecured>
+    </Field>
+    <Field>User Name<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Password<IsSecured>true</IsSecured>
+    </Field>
+    <Field>Custom1<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom2<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom3<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom4<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom5<IsSecured>false</IsSecured>
+    </Field>
+</CategoryInfo>
+
+

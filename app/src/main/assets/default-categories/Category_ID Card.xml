@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<CategoryInfo>
+  <CategoryName>ID Card</CategoryName>
+  <IconIndex>13</IconIndex>
+
+<Field>Card Name<IsSecured>false</IsSecured>
+</Field>
+<Field>Country/Org.<IsSecured>false</IsSecured>
+</Field>
+<Field>ID No.<IsSecured>false</IsSecured>
+</Field>
+<Field>First Name<IsSecured>false</IsSecured>
+</Field>
+<Field>Last Name<IsSecured>false</IsSecured>
+</Field>
+<Field>Date Of Birth<IsSecured>false</IsSecured>
+</Field>
+<Field>Date Of Issue<IsSecured>false</IsSecured>
+</Field>
+<Field>Expiry Date<IsSecured>false</IsSecured>
+</Field>
+<Field>Address<IsSecured>false</IsSecured>
+</Field>
+<Field>Sex<IsSecured>false</IsSecured>
+</Field>
+<Field>Eyes Color<IsSecured>false</IsSecured>
+</Field>
+<Field>Hair Color<IsSecured>false</IsSecured>
+</Field>
+<Field>Height<IsSecured>false</IsSecured>
+</Field>
+<Field>Weight<IsSecured>false</IsSecured>
+</Field>
+
+
+<Field>Custom1<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom2<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom3<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom4<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom5<IsSecured>false</IsSecured>
+</Field>
+
+</CategoryInfo>

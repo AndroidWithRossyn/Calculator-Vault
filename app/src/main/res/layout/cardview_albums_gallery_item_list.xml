@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/lib/com.example.vault"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3.0dip"
+    android:clickable="false"
+    app:cardElevation="2.0dip"
+    app:cardUseCompatPadding="true">
+
+    <com.example.vault.common.MaterialRippleLayout
+        android:id="@+id/fl_ripple"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorWhite"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleColor="#ff585858"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:id="@+id/ll_thumimage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_album_thumbnil1"
+                    android:layout_width="65.0dip"
+                    android:layout_height="65.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip" />
+
+                <ImageView
+                    android:id="@+id/iv_album_thumbnil"
+                    android:layout_width="65.0dip"
+                    android:layout_height="65.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip" />
+
+                <ImageView
+                    android:id="@+id/thumbImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="3.0dip"
+                    android:paddingTop="3.0dip"
+                    android:paddingBottom="2.0dip" />
+
+                <RelativeLayout
+                    android:layout_width="65.0dip"
+                    android:layout_height="65.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip">
+
+                    <ImageView
+                        android:id="@+id/playthumbImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="4.0dip"
+                        android:paddingTop="4.0dip"
+                        android:paddingRight="4.0dip"
+                        android:paddingBottom="4.0dip" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_textAlbumName"
+                    android:layout_width="180.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_album_thumbnil1"
+                    android:orientation="vertical">
+
+                    <TextView xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+                        android:id="@+id/textAlbumName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="6.0dip"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="Photos sfsfdf"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/black_color"
+                        android:textSize="17.0sp"
+                        pixlui:typeface="Roboto-Regular.ttf" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6.0dip"
+                        android:gravity="left"
+                        android:orientation="vertical">
+
+                        <TextView xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+                            android:id="@+id/lbl_Date"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:gravity="center_vertical"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="Date: "
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:textColor="@color/Color_Secondary_Font"
+                            android:textSize="12.0sp"
+                            pixlui:typeface="Roboto-Regular.ttf" />
+
+                        <TextView
+                            android:id="@+id/lbl_Time"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:gravity="center_vertical"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="Time: "
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:textColor="@color/Color_Secondary_Font"
+                            android:textSize="12.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_toLeftOf="@+id/ll_EditOptions"
+                    android:background="@drawable/sidemenu_count_bg"
+                    android:orientation="horizontal">
+
+                    <TextView xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+                        android:id="@+id/lbl_Count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:maxEms="2"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/ColorWhite"
+                        android:textSize="12.0sp"
+                        pixlui:typeface="Roboto-Regular.ttf" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_EditOptions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/iv_EditOptions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu_folder_icon" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_selection"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/album_grid_item_boarder_unselect"
+                android:orientation="vertical" />
+        </FrameLayout>
+    </com.example.vault.common.MaterialRippleLayout>
+</androidx.cardview.widget.CardView>

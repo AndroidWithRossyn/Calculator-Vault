@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.flipboard.bottomsheet.BottomSheetLayout
+        android:id="@+id/bottomsheet"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/fontmedium"
+                    android:text="Setting"
+                    android:textColor="@color/black_color"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_anchor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/ll_SettingActivityTopBaar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ColorAppTheme"
+                android:gravity="center_vertical"
+                android:paddingTop="4.0dip"
+                android:paddingBottom="4.0dip"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="left">
+
+                    <ImageButton
+                        android:id="@+id/ib_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/back_top_bar_icon"
+                        android:onClick="btnBackonClick" />
+
+                    <TextView
+                        android:id="@+id/SettingActivityTopBaar_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="7.0dip"
+                        android:text="@string/action_settings"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/ColorWhite"
+                        android:textSize="20.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/ll_fmain"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/White"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/ll_main"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/fingerprint"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/app_list_selector"
+                        android:orientation="horizontal"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/ll_circle00"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginTop="3.0dip"
+                                android:layout_marginRight="2.0dip"
+                                android:background="@drawable/layout_circle_style">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/ic_fingerprint" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:text="@string/Fingerprint"
+                                    android:textColor="@color/Color_Menu_Thumb_Font"
+                                    android:textSize="17.0sp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:layout_marginTop="25.0dip"
+                                    android:layout_marginRight="10.0dip"
+                                    android:text="@string/fingerprintdetail"
+                                    android:textColor="@color/Color_Secondary_Font"
+                                    android:textSize="14.0sp" />
+                            </RelativeLayout>
+
+                            <Switch
+                                android:id="@+id/fingerSwitch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="10dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/selectappicon"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/app_list_selector"
+                        android:orientation="horizontal"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/ll_circle09"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginTop="3.0dip"
+                                android:layout_marginRight="2.0dip"
+                                android:background="@drawable/layout_circle_style">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/ic_phone" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:text="@string/appicon"
+                                    android:textColor="@color/Color_Menu_Thumb_Font"
+                                    android:textSize="17.0sp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:layout_marginTop="25.0dip"
+                                    android:layout_marginRight="10.0dip"
+                                    android:text="@string/appicondetail"
+                                    android:textColor="@color/Color_Secondary_Font"
+                                    android:textSize="14.0sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_lollipop_sd_permission"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/app_list_selector"
+                        android:orientation="horizontal"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/ll_circle0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginTop="3.0dip"
+                                android:layout_marginRight="2.0dip"
+                                android:background="@drawable/layout_circle_style">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/storage_options_icon" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:text="@string/lbl_lollipop_sd_permission"
+                                    android:textColor="@color/Color_Menu_Thumb_Font"
+                                    android:textSize="17.0sp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:layout_marginTop="25.0dip"
+                                    android:layout_marginRight="10.0dip"
+                                    android:text="@string/lbl_lollipop_sd_permissionDesc"
+                                    android:textColor="@color/Color_Secondary_Font"
+                                    android:textSize="14.0sp" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_tick"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10.0dip"
+                                android:background="@drawable/permission_tick"
+                                android:orientation="vertical" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_security_credentials"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/app_list_selector"
+                        android:orientation="horizontal"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/ll_circle1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginTop="3.0dip"
+                                android:layout_marginRight="2.0dip"
+                                android:background="@drawable/layout_circle_style">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/ic_security_credentials_icon" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:text="@string/lblsetting_SecurityCredentials"
+                                    android:textColor="@color/Color_Menu_Thumb_Font"
+                                    android:textSize="17.0sp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:layout_marginTop="25.0dip"
+                                    android:layout_marginRight="10.0dip"
+                                    android:text="@string/lblsetting_SecurityCredentialsDesc1"
+                                    android:textColor="@color/Color_Secondary_Font"
+                                    android:textSize="14.0sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_stealth_mode"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/app_list_selector"
+                        android:orientation="horizontal"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="20.0dip"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/ll_circle8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginTop="3.0dip"
+                                android:layout_marginRight="2.0dip">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/setting_disguise_icon" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:text="@string/lblsetting_stealth_mode_topbaar_new"
+                                    android:textColor="@color/Color_Menu_Thumb_Font"
+                                    android:textSize="17.0sp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:layout_marginTop="25.0dip"
+                                    android:layout_marginRight="10.0dip"
+                                    android:text="@string/lblsetting_StealthModeDesc1"
+                                    android:textColor="@color/Color_Secondary_Font"
+                                    android:textSize="14.0sp" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cb_stealth_mode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="1.0dip"
+                                    android:button="@drawable/btn_import_checkbox"
+                                    android:focusable="false"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_data_recovery"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/app_list_selector"
+                        android:orientation="horizontal"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/ll_circle3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginTop="3.0dip"
+                                android:layout_marginRight="2.0dip"
+                                android:background="@drawable/layout_circle_style">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/data_recovery_icon" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:text="@string/lblsetting_DataRecovery"
+                                    android:textColor="@color/Color_Menu_Thumb_Font"
+                                    android:textSize="17.0sp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:layout_marginTop="25.0dip"
+                                    android:layout_marginRight="10.0dip"
+                                    android:text="@string/lblsetting_DataRecoveryDesc"
+                                    android:textColor="@color/Color_Secondary_Font"
+                                    android:textSize="14.0sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_recovery_credentials"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/app_list_selector"
+                        android:orientation="horizontal"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/ll_circle4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginTop="3.0dip"
+                                android:layout_marginRight="2.0dip"
+                                android:background="@drawable/layout_circle_style">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/ic_recovery_of_credentials" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:text="@string/lblsetting_RecoveryofCredentials"
+                                    android:textColor="@color/Color_Menu_Thumb_Font"
+                                    android:textSize="17.0sp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:layout_marginTop="25.0dip"
+                                    android:layout_marginRight="10.0dip"
+                                    android:text="@string/lblsetting_RecoveryofCredentialsDesc"
+                                    android:textColor="@color/Color_Secondary_Font"
+                                    android:textSize="14.0sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_decoy_security_lock"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/app_list_selector"
+                        android:orientation="horizontal"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/ll_circle5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginTop="3.0dip"
+                                android:layout_marginRight="2.0dip"
+                                android:background="@drawable/layout_circle_style">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/ic_decoy_mode" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:text="@string/lblsetting_DecoyMode"
+                                    android:textColor="@color/Color_Menu_Thumb_Font"
+                                    android:textSize="17.0sp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:layout_marginTop="25.0dip"
+                                    android:layout_marginRight="10.0dip"
+                                    android:text="@string/lblsetting_DecoyModeDesc"
+                                    android:textColor="@color/Color_Secondary_Font"
+                                    android:textSize="14.0sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_storage_options"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/app_list_selector"
+                        android:orientation="horizontal"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/ll_circle6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginTop="3.0dip"
+                                android:layout_marginRight="2.0dip"
+                                android:background="@drawable/layout_circle_style">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/storage_options_icon" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:text="@string/lblsetting_StorageOptions"
+                                    android:textColor="@color/Color_Menu_Thumb_Font"
+                                    android:textSize="17.0sp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:layout_marginTop="25.0dip"
+                                    android:layout_marginRight="10.0dip"
+                                    android:text="@string/lblsetting_StorageOptionsDesc"
+                                    android:textColor="@color/Color_Secondary_Font"
+                                    android:textSize="14.0sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_panic_switch"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/app_list_selector"
+                        android:orientation="horizontal"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/ll_circle7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginTop="3.0dip"
+                                android:layout_marginRight="2.0dip"
+                                android:background="@drawable/layout_circle_style">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/ic_panic_switch_icon" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:text="@string/lblsetting_Panicswitch"
+                                    android:textColor="@color/Color_Menu_Thumb_Font"
+                                    android:textSize="17.0sp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:layout_marginTop="25.0dip"
+                                    android:layout_marginRight="10.0dip"
+                                    android:text="@string/lblsetting_PanicswitchDesc"
+                                    android:textColor="@color/Color_Secondary_Font"
+                                    android:textSize="14.0sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </com.flipboard.bottomsheet.BottomSheetLayout>
+
+</LinearLayout>

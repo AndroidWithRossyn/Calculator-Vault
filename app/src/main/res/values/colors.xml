@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="AlbumNameColor">#ff005da3</color>
+
+    <color name="ColorAppTheme">#000000</color>
+    <color name="iconColor">#000000</color>
+
+    <color name="ColorBluish">#ff00695c</color>
+    <color name="ColorLightBlue">#00b3ff</color>
+    <color name="ColorPrimary">#243746</color>
+    <!--    ff036750-->
+    <color name="ColorPrimaryDark">#424242</color>
+    <color name="ColorTumbnailbg">#fff4f2f2</color>
+    <color name="ColorUnselectTab">#ffb7b7b7</color>
+    <color name="ColorWhite">#ffffffff</color>
+    <color name="Color_Green">#ff65b73c</color>
+    <color name="Color_Menu_Thumb_Font">#ff565656</color>
+    <color name="Color_Menu_Thumb_Hover">#ffdcdcdc</color>
+    <color name="Color_Secondary_Font">#6C6B6B</color>
+    <color name="Color_green_popup_material">#ff00695c</color>
+    <color name="Coloractivity_bg">#ffeeeeee</color>
+    <color name="ColorgraishBlue">#ffc8e3ff</color>
+    <color name="Colortransparent">#40ffffff</color>
+    <color name="Coloryellow">#fffcdb14</color>
+    <color name="White">#ffffffff</color>
+    <color name="white">#ffffffff</color>
+
+    <color name="bg_album">#ffcfd8ed</color>
+    <color name="bg">#F1F2F3</color>
+    <color name="black_color">#ff000000</color>
+    <color name="black_light">#ff000000</color>
+    <color name="blue">#ff76c7f4</color>
+    <color name="blue_cal">#ff0183ba</color>
+    <color name="blueclr">#304FFE</color>
+    <color name="blue_dark">#c3000000</color>
+
+    <color name="colorAccent">#ff80cbc4</color>
+    <color name="colorPrimary">#ff212121</color>
+    <color name="colorPrimaryDark">@android:color/black</color>
+    <color name="colornotelbl">#ff00695c</color>
+
+    <color name="cyan">#ff00bcd4</color>
+    <color name="cyan_dark">#ff0097a7</color>
+    <color name="dark_grey">#243746</color>
+
+    <color name="design_default_color_primary">#ff3f51b5</color>
+    <color name="design_default_color_primary_dark">#ff303f9f</color>
+
+
+    <color name="fake_msg_popup_color">#ff555555</color>
+
+    <color name="fulltransparent_color">#15ffffff</color>
+    <color name="gray">#ff616161</color>
+    <color name="gray_dark">#ff424242</color>
+    <color name="green">#ff60bf45</color>
+    <color name="green_dark">#ff388e3c</color>
+    <color name="grey">#ffeeeeee</color>
+
+    <color name="indigo">#ff3f51b5</color>
+    <color name="indigo_dark">#ff303f9f</color>
+
+    <color name="memories_transparent_color">#70ffffff</color>
+
+
+    <color name="orange">#ffe98a03</color>
+    <color name="overflow_background">#ffeeeeee</color>
+    <color name="panel_1_dark">#ff303030</color>
+    <color name="panel_1_light">#fffafafa</color>
+    <color name="panel_2_dark">#ff424242</color>
+    <color name="panel_2_light">#ffeeeeee</color>
+    <color name="popup_heading_color">#ff00b374</color>
+    <color name="popup_text_color">#ff515151</color>
+
+    <color name="purple">#ff9348ad</color>
+    <color name="purple_dark">#ff512da8</color>
+    <color name="rate_dialog_back_color">#ff97bee7</color>
+    <color name="red">#fff44336</color>
+    <color name="redColor">#ffe84b43</color>
+    <color name="red_dark">#ffd32f2f</color>
+
+    <color name="text2_color">#ff999999</color>
+    <color name="text_primary_dark">#ff626366</color>
+    <color name="text_primary_light">#ff828282</color>
+    <color name="text_secondary_light">#ff7f7f7f</color>
+
+    <color name="transparent_Black">#243746</color>
+    <color name="transparent_Black_10">#1a000000</color>
+    <color name="transparent_Black_15">#26000000</color>
+    <color name="transparent_Black_20">#33000000</color>
+    <color name="transparent_Black_25">#40000000</color>
+    <color name="transparent_Black_30">#4d000000</color>
+    <color name="transparent_Black_35">#59000000</color>
+    <color name="transparent_Black_40">#66000000</color>
+    <color name="transparent_Black_45">#73000000</color>
+    <color name="transparent_Black_5">#0d000000</color>
+    <color name="transparent_Black_50">#80000000</color>
+    <color name="transparent_Black_55">#8c000000</color>
+    <color name="transparent_Black_60">#99000000</color>
+    <color name="transparent_Black_65">#a6000000</color>
+    <color name="transparent_Black_70">#b3000000</color>
+    <color name="transparent_Black_75">#b000000f</color>
+    <color name="transparent_Black_80">#cc000000</color>
+    <color name="transparent_Black_85">#d9000000</color>
+    <color name="transparent_Black_90">#e6000000</color>
+    <color name="transparent_Black_95">#f2000000</color>
+    <color name="transparent_black_color">#80000000</color>
+    <color name="transparent_black_color2">#40000000</color>
+    <color name="transparent_gray">#ffededed</color>
+    <color name="transparent_white_10">#1affffff</color>
+    <color name="transparent_white_15">#26ffffff</color>
+    <color name="transparent_white_20">#33ffffff</color>
+    <color name="transparent_white_25">#40ffffff</color>
+    <color name="transparent_white_30">#4dffffff</color>
+    <color name="transparent_white_35">#59ffffff</color>
+    <color name="transparent_white_40">#66ffffff</color>
+    <color name="transparent_white_45">#73ffffff</color>
+    <color name="transparent_white_5">#0dffffff</color>
+    <color name="transparent_white_50">#80ffffff</color>
+    <color name="transparent_white_55">#8cffffff</color>
+    <color name="transparent_white_60">#99ffffff</color>
+    <color name="transparent_white_65">#a6ffffff</color>
+    <color name="transparent_white_70">#b3ffffff</color>
+    <color name="transparent_white_75">#bfffffff</color>
+    <color name="transparent_white_80">#ccffffff</color>
+    <color name="transparent_white_85">#d9ffffff</color>
+    <color name="transparent_white_90">#e6ffffff</color>
+    <color name="transparent_white_95">#f2ffffff</color>
+    <color name="transparent_white_color">#1affffff</color>
+    <color name="transparent_white_color2">#ffffffff</color>
+    <color name="white_pressed">#fff1f1f1</color>
+    <color name="clacback">#303c4e</color>
+    <color name="navigationcolor">#000102</color>
+</resources>

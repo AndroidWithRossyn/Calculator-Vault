@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/fontmedium"
+            android:text="Data Recovery"
+            android:textColor="@color/black_color"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_storage_option_topbaar_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ColorAppTheme"
+            android:gravity="center_vertical"
+            android:paddingTop="4.0dip"
+            android:paddingBottom="4.0dip"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="left">
+
+                <ImageButton
+                    android:id="@+id/ib_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_top_bar_icon"
+                    android:onClick="btnBackonClick" />
+
+                <TextView
+                    android:id="@+id/lbl_storage_option_topbaar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="7.0dip"
+                    android:text="@string/lblsetting_DataRecovery"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/ColorWhite"
+                    android:textSize="20.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtUninstallAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="25.0dip"
+            android:layout_marginRight="15.0dip"
+            android:text="@string/recovery_alert_dialog_description"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/Color_Menu_Thumb_Font"
+            android:textSize="18.0sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="2.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/recovery_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_DataRecover_Recover"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bottom_baar_album"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbl_DataRecover_Recover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:paddingTop="12.0dip"
+                android:paddingBottom="12.0dip"
+                android:text="@string/lbl_DataRecover_Recover"
+                android:textColor="@color/white"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

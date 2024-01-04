@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginBottom="5.0dip">
+
+        <ImageView
+            android:id="@+id/iv_RowUp"
+            android:layout_width="28.0dip"
+            android:layout_height="28.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/ic_navigation_up_icon"
+            android:clickable="false" />
+
+        <ImageView
+            android:id="@+id/iv_RowDown"
+            android:layout_width="28.0dip"
+            android:layout_height="28.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/ic_navigation_icon"
+            android:clickable="false" />
+
+        <EditText
+            android:id="@+id/et_text"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/list_login_option_click"
+            android:hint="Add Item"
+            android:inputType="textAutoComplete"
+            android:maxLength="30"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:textColor="@color/Color_Secondary_Font"
+            android:textColorHint="@color/transparent_black_color2"
+            android:textSize="15.0sp" />
+
+        <ImageView
+            android:id="@+id/iv_RowDel"
+            android:layout_width="28.0dip"
+            android:layout_height="28.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/ic_del_icon_click" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="8dp"
+        android:background="@color/transparent_black_color2" />
+</LinearLayout>

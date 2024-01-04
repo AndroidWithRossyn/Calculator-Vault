@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<CategoryInfo>
+  <CategoryName>Bank Account</CategoryName>
+  <IconIndex>3</IconIndex>
+
+<Field>Bank Name<IsSecured>false</IsSecured>
+</Field>
+<Field>Account No.<IsSecured>false</IsSecured>
+</Field>
+<Field>Account Holder<IsSecured>false</IsSecured>
+</Field>
+<Field>Account Type<IsSecured>false</IsSecured>
+</Field>
+<Field>PIN<IsSecured>true</IsSecured>
+</Field>
+<Field>Email<IsSecured>false</IsSecured>
+</Field>
+<Field>Mother’s Name<IsSecured>false</IsSecured>
+</Field>
+<Field>Surname<IsSecured>false</IsSecured>
+</Field>
+<Field>Sort Code<IsSecured>false</IsSecured>
+</Field>
+<Field>Swift Code<IsSecured>false</IsSecured>
+</Field>
+<Field>ABA/Routing No.<IsSecured>false</IsSecured>
+</Field>
+<Field>PIN2<IsSecured>true</IsSecured>
+</Field>
+<Field>URL<IsSecured>true</IsSecured>
+</Field>
+<Field>Custom1<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom2<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom3<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom4<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom5<IsSecured>false</IsSecured>
+</Field>
+</CategoryInfo>

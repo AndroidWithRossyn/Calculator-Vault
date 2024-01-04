@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<CategoryInfo>
+  <CategoryName>Social Network</CategoryName>
+  <IconIndex>7</IconIndex>
+
+<Field>Title<IsSecured>false</IsSecured>
+</Field>
+<Field>User Name<IsSecured>false</IsSecured>
+</Field>
+<Field>Password<IsSecured>true</IsSecured>
+</Field>
+<Field>Website<IsSecured>false</IsSecured>
+</Field>
+<Field>Note<IsSecured>false</IsSecured>
+</Field>
+
+<Field>Custom1<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom2<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom3<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom4<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom5<IsSecured>false</IsSecured>
+</Field>
+</CategoryInfo>

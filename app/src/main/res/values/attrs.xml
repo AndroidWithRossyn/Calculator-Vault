@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MaskableLayout">
+        <attr name="mask" format="reference" />
+        <attr name="porterduffxfermode">
+            <enum name="ADD" value="0" />
+            <enum name="CLEAR" value="1" />
+            <enum name="DARKEN" value="2" />
+            <enum name="DST" value="3" />
+            <enum name="DST_ATOP" value="4" />
+            <enum name="DST_IN" value="5" />
+            <enum name="DST_OUT" value="6" />
+            <enum name="DST_OVER" value="7" />
+            <enum name="LIGHTEN" value="8" />
+            <enum name="MULTIPLY" value="9" />
+            <enum name="OVERLAY" value="10" />
+            <enum name="SCREEN" value="11" />
+            <enum name="SRC" value="12" />
+            <enum name="SRC_ATOP" value="13" />
+            <enum name="SRC_IN" value="14" />
+            <enum name="SRC_OUT" value="15" />
+            <enum name="SRC_OVER" value="16" />
+            <enum name="XOR" value="17" />
+        </attr>
+        <attr name="anti_aliasing" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="AnimatedProgressBar">
+        <attr name="backgroundColor" format="color" />
+        <attr name="bidirectionalAnimate" format="boolean" />
+        <attr name="progressColor" format="color" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="MaterialRippleLayout">
+        <attr name="mrl_rippleColor" format="color" localization="suggested" />
+        <attr name="mrl_rippleDimension" format="dimension" localization="suggested" />
+        <attr name="mrl_rippleOverlay" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleAlpha" format="float" localization="suggested" />
+        <attr name="mrl_rippleDuration" format="integer" localization="suggested" />
+        <attr name="mrl_rippleFadeDuration" format="integer" localization="suggested" />
+        <attr name="mrl_rippleHover" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleBackground" format="color" localization="suggested" />
+        <attr name="mrl_rippleDelayClick" format="boolean" localization="suggested" />
+        <attr name="mrl_ripplePersistent" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleInAdapter" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleRoundedCorners" format="dimension" localization="suggested" />
+    </declare-styleable>
+
+    <attr name="panel1" format="reference|color" />
+    <attr name="panel2" format="reference|color" />
+    <attr name="backspace" format="reference" />
+
+
+
+    <declare-styleable name="BlurLayout">
+        <attr name="downscaleFactor" format="float" />
+        <attr name="blurRadius" format="integer" />
+        <attr name="fps" format="integer" />
+    </declare-styleable>
+
+
+
+
+</resources>

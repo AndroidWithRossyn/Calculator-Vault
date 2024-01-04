@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/fontmedium"
+                android:text="Notes"
+                android:textColor="@color/black_color"
+                android:textSize="20dp" />
+            <LinearLayout
+                android:id="@+id/ll_anchor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:orientation="horizontal" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_noNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_notes_empty_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty_note_folder" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/gv_NotesFiles"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10.0dip"
+                android:gravity="center"
+                android:horizontalSpacing="10.0dip"
+                android:numColumns="1"
+                android:scrollbars="none"
+                android:verticalSpacing="10.0dip" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabbutton_notesFiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="end|bottom|center"
+                android:layout_marginRight="25.0dip"
+                android:layout_marginBottom="25.0dip"
+                android:onClick="fabClicked"
+                app:backgroundTint="@color/blueclr"
+                app:fab_backgroundColor="#ffff4444"
+                app:srcCompat="@drawable/ic_add_file" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_NotesFileEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/btn_bottom_baar_album"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2.0">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_NotesFileMove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            app:srcCompat="@drawable/ic_photos_edit_rename" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_NotesFileDelete"
+            android:layout_width="28.0dip"
+            android:layout_height="28.0dip"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            app:srcCompat="@drawable/ic_deletebtn" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="350dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_popup_top_baar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="20.0dip"
+                android:paddingBottom="0.0dip">
+
+                <TextView
+                    android:id="@+id/lbl_Create_Edit_Album"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/fontmedium"
+                    android:text="@string/lbl_Photos_Album_Create_Album"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/black_color"
+                    android:textSize="19.0sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txt_AlbumName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_below="@+id/ll_popup_top_baar"
+                android:layout_marginTop="30.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginBottom="20.0dip"
+                android:background="@drawable/list_login_option_click"
+                android:hint="@string/lbl_Photos_Album_Create_Album_hint"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+
+                android:maxLength="20"
+                android:paddingLeft="10.0dip"
+                android:paddingTop="8.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingBottom="8.0dip"
+                android:textColor="@color/black_color"
+                android:textSize="17.0sp">
+
+                <requestFocus />
+            </EditText>
+
+            <LinearLayout
+                android:layout_below="@+id/txt_AlbumName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_Ok"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_bottom_baar_album"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_Ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fontmedium"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip"
+                        android:text="@string/lblsetting_SecurityCredentials_setpassword_Ok"
+                        android:textColor="@color/White"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_Cancel"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_bottom_baar_album"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_Cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fontmedium"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip"
+                        android:text="@string/lblsetting_SecurityCredentials_setpassword_Cancel"
+                        android:textColor="@color/White"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

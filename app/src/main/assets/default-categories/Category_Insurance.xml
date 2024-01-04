@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<CategoryInfo>
+  <CategoryName>Insurance</CategoryName>
+  <IconIndex>11</IconIndex>
+
+<Field>Card Name<IsSecured>false</IsSecured>
+</Field>
+<Field>Company Name<IsSecured>false</IsSecured>
+</Field>
+<Field>Coverage Type<IsSecured>false</IsSecured>
+</Field>
+<Field>Member Name<IsSecured>false</IsSecured>
+</Field>
+<Field>ID/Member No.<IsSecured>false</IsSecured>
+</Field>
+<Field>Gender<IsSecured>false</IsSecured>
+</Field>
+<Field>Date of Issue<IsSecured>false</IsSecured>
+</Field>
+<Field>Date of Expiry<IsSecured>false</IsSecured>
+</Field>
+<Field>Address<IsSecured>false</IsSecured>
+</Field>
+
+<Field>Custom1<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom2<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom3<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom4<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom5<IsSecured>false</IsSecured>
+</Field>
+
+</CategoryInfo>

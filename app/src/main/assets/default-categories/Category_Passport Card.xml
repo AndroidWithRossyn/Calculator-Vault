@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<CategoryInfo>
+  <CategoryName>Passport Card</CategoryName>
+  <IconIndex>14</IconIndex>
+
+<Field>Passport Card Name<IsSecured>false</IsSecured>
+</Field>
+<Field>Given Name(s)<IsSecured>false</IsSecured>
+</Field>
+<Field>Surname<IsSecured>false</IsSecured>
+</Field>
+<Field>Passport No.<IsSecured>false</IsSecured>
+</Field>
+<Field>Date of Issue<IsSecured>false</IsSecured>
+</Field>
+<Field>Date of Expiry<IsSecured>false</IsSecured>
+</Field>
+<Field>Gender<IsSecured>false</IsSecured>
+</Field>
+<Field>Date of Birth<IsSecured>false</IsSecured>
+</Field>
+<Field>Place of Birth<IsSecured>false</IsSecured>
+</Field>
+<Field>Nationality<IsSecured>false</IsSecured>
+</Field>
+<Field>Authority<IsSecured>false</IsSecured>
+</Field>
+<Field>Type<IsSecured>false</IsSecured>
+</Field>
+
+
+<Field>Custom1<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom2<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom3<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom4<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom5<IsSecured>false</IsSecured>
+</Field>
+
+</CategoryInfo>

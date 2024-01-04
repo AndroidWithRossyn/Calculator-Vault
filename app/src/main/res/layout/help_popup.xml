@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/helppopupshape"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/ColorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lbl_helpPopupHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+            android:textColor="@color/black_color"
+            android:textSize="22.0sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/sv_help"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/ll_Dont_Show"
+                android:layout_width="match_parent"
+                android:layout_height="50.0dip"
+                android:layout_gravity="left"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bottom_baar_album"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="Don't Show"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_Ok"
+                android:layout_width="match_parent"
+                android:layout_height="50.0dip"
+                android:layout_gravity="right"
+
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bottom_baar_album"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+
+                    android:text="Dismiss"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

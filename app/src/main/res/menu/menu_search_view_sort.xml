@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_viewSort"
+        android:icon="@drawable/ic_more_top_bar_icon"
+        android:orderInCategory="3"
+        android:title="@string/more_options"
+        android:iconTint="@color/white"
+        app:showAsAction="always" />
+</menu>

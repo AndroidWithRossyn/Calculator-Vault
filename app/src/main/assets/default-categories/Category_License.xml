@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<CategoryInfo>
+  <CategoryName>License</CategoryName>
+  <IconIndex>5</IconIndex>
+
+<Field>License Name<IsSecured>false</IsSecured>
+</Field>
+<Field>License Holder<IsSecured>false</IsSecured>
+</Field>
+<Field>ID Number<IsSecured>false</IsSecured>
+</Field>
+<Field>City/Location<IsSecured>false</IsSecured>
+</Field>
+<Field>Date Issued<IsSecured>false</IsSecured>
+</Field>
+<Field>Expiration Date<IsSecured>false</IsSecured>
+</Field>
+<Field>N.I.C or any No.<IsSecured>false</IsSecured>
+</Field>
+<Field>State/Province<IsSecured>false</IsSecured>
+</Field>
+<Field>Class<IsSecured>false</IsSecured>
+</Field>
+<Field>Phone No.<IsSecured>false</IsSecured>
+</Field>
+<Field>Address<IsSecured>false</IsSecured>
+</Field>
+<Field>URL<IsSecured>false</IsSecured>
+</Field>
+
+<Field>Custom1<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom2<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom3<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom4<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom5<IsSecured>false</IsSecured>
+</Field>
+</CategoryInfo>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:orderInCategory="0"
+        android:icon="@drawable/appicon"
+        android:title="@string/Calculator" />
+    <item
+        android:orderInCategory="1"
+        android:icon="@mipmap/ic_vault_cal_aosp"
+        android:title="@string/Calculator" />
+    <item
+        android:orderInCategory="2"
+        android:icon="@mipmap/ic_vault_cal_google"
+        android:title="@string/Calculator" />
+    <item
+        android:orderInCategory="3"
+        android:icon="@mipmap/ic_vault_cal_samsung"
+        android:title="@string/Calculator" />
+    <item
+        android:orderInCategory="4"
+        android:icon="@mipmap/ic_vault_cal_huawei01"
+        android:title="@string/Calculator" />
+    <item
+        android:orderInCategory="5"
+        android:icon="@mipmap/ic_vault_cal_oppo01"
+        android:title="@string/Calculator" />
+    <item
+        android:orderInCategory="6"
+        android:icon="@mipmap/ic_vault_cal_vivo01"
+        android:title="@string/Calculator" />
+    <item
+        android:orderInCategory="7"
+        android:icon="@mipmap/ic_vault_cal_xiaomi01"
+        android:title="@string/Calculator" />
+    <item
+        android:orderInCategory="8"
+        android:icon="@mipmap/ic_vault_cal_huawei02"
+        android:title="@string/Calculator" />
+    <item
+        android:orderInCategory="9"
+        android:icon="@mipmap/ic_vault_cal_oppo02"
+        android:title="@string/Calculator" />
+    <item
+        android:orderInCategory="10"
+        android:icon="@mipmap/ic_vault_cal_vivo02"
+        android:title="@string/Calculator" />
+    <item
+        android:orderInCategory="11"
+        android:icon="@mipmap/ic_vault_cal_xiaomi02"
+        android:title="@string/Calculator" />
+
+
+
+</menu>

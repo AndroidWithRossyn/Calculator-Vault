@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gfdgfd"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.9">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="2.0" />
+
+
+                    <TextView
+                        android:id="@+id/tv_pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/opasitydownbg"
+                        android:fontFamily="@font/font"
+                        android:gravity="center"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="@string/cal_pin_text"
+                        android:textColor="@color/blueclr"
+                        android:textSize="16.0dip" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <HorizontalScrollView
+                            android:id="@+id/display_hsv"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50.0dip"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="right">
+
+                                <com.example.vault.utilities.CeraProBoldTextView
+                                    android:id="@+id/display_primary"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/standard_margin"
+                                    android:layout_marginRight="@dimen/standard_margin"
+                                    android:text="Text"
+                                    android:textColor="@color/blueclr"
+                                    android:textSize="42dp" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="#555353" />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/opasitydownbg" />
+
+                    <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0" />
+
+                    <com.example.vault.utilities.CeraProBoldTextView
+                        android:id="@+id/display_secondary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="@dimen/standard_margin"
+                        android:layout_marginRight="@dimen/standard_margin"
+                        android:text="text"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/display_secondary_text_port"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/display_overlay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:alpha="0.0"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:id="@+id/settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="@dimen/standard_margin"
+                    android:src="@drawable/ic_settings_white_24dp"
+                    android:visibility="gone"
+                    app:tint="@color/blueclr" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:background="?panel2"
+                android:orientation="vertical"
+                android:padding="@dimen/standard_margin"
+                android:visibility="gone"
+             >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <com.example.vault.utilities.CeraProBoldTextView
+                        android:id="@+id/button_sin"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:gravity="center"
+                        android:text="sin"
+                        android:textSize="@dimen/panel_2_button_text_port" />
+
+                    <com.example.vault.utilities.CeraProBoldTextView
+                        android:id="@+id/button_cos"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:gravity="center"
+                        android:text="cos"
+                        android:textSize="@dimen/panel_2_button_text_port" />
+
+                    <com.example.vault.utilities.CeraProBoldTextView
+                        android:id="@+id/button_tan"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:gravity="center"
+                        android:text="tan"
+                        android:textSize="@dimen/panel_2_button_text_port" />
+
+                    <com.example.vault.utilities.CeraProBoldTextView
+                        android:id="@+id/button_ln"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:gravity="center"
+                        android:text="ln"
+                        android:textSize="@dimen/panel_2_button_text_port" />
+
+                    <com.example.vault.utilities.CeraProBoldTextView
+                        android:id="@+id/button_log"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:gravity="center"
+                        android:text="log"
+                        android:textSize="@dimen/panel_2_button_text_port" />
+
+                    <com.example.vault.utilities.CeraProBoldTextView
+                        android:id="@+id/button_factorial1"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:gravity="center"
+                        android:text="!"
+                        android:textSize="@dimen/panel_2_button_text_port" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <com.example.vault.utilities.CeraProBoldTextView
+                        android:id="@+id/button_pi"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:gravity="center"
+                        android:text="π"
+                        android:textSize="@dimen/panel_2_button_text_port" />
+
+                    <com.example.vault.utilities.CeraProBoldTextView
+                        android:id="@+id/button_e"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:gravity="center"
+                        android:text="e"
+                        android:textSize="@dimen/panel_2_button_text_port" />
+
+                    <com.example.vault.utilities.CeraProBoldTextView
+                        android:id="@+id/button_square_root1"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:gravity="center"
+                        android:text="√"
+                        android:textSize="@dimen/panel_2_button_text_port" />
+
+                    <com.example.vault.utilities.CeraProBoldTextView
+                        android:id="@+id/button_start_parenthesis"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:gravity="center"
+                        android:text="("
+                        android:textSize="@dimen/panel_2_button_text_port" />
+
+                    <com.example.vault.utilities.CeraProBoldTextView
+                        android:id="@+id/button_end_parenthesis"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:gravity="center"
+                        android:text=")"
+                        android:textSize="@dimen/panel_2_button_text_port" />
+
+                    <com.example.vault.utilities.CeraProBoldTextView
+                        android:id="@+id/button_exponent111"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:gravity="center"
+                        android:text="%"
+                        android:textSize="@dimen/panel_2_button_text_port" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="4.0"
+                android:orientation="horizontal">
+
+                <!--panel1-->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/bggray"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.example.vault.utilities.CeraProBoldTextView
+                                android:id="@+id/button_square_root"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="C"
+                                android:textColor="@color/black_color"
+                                android:textSize="24dp" />
+
+                        </RelativeLayout>
+
+
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_7"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/bgwhite"
+                            android:gravity="center"
+                            android:text="7"
+                            android:textColor="@color/black_color"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+
+                        <!--android:background="?selectableItemBackgroundBorderless"-->
+
+                        <!-- <com.example.vault.utilities.CeraProBoldTextView
+                             android:layout_width="fill_parent"
+                             android:layout_height="1.5px"
+                             android:background="@color/gray" />
+             -->
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/bgwhite"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textColor="@color/black_color"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+
+                        <!-- <com.example.vault.utilities.CeraProBoldTextView
+                             android:layout_width="fill_parent"
+                             android:layout_height="1.5px"
+                             android:background="@color/gray" />
+             -->
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/bgwhite"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/black_color"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_decimal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+
+                            android:background="@drawable/bgwhite"
+                            android:gravity="center"
+                            android:text="."
+                            android:textColor="@color/black_color"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+                        <!--                        <com.example.vault.utilities.CeraProBoldTextView-->
+                        <!--                            android:id="@+id/button_0"-->
+                        <!--                            android:layout_width="fill_parent"-->
+                        <!--                            android:layout_height="0.0dip"-->
+                        <!--                                  android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"-->
+                        <!--                            android:layout_weight="1.0"-->
+
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="0"-->
+                        <!--                            android:textColor="@color/White"-->
+                        <!--                            android:textSize="@dimen/panel_1_button_text_port" />-->
+
+                        <!-- <com.example.vault.utilities.CeraProBoldTextView
+                             android:layout_width="fill_parent"
+                             android:layout_height="1.5px"
+                             android:background="@color/gray" />-->
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/bggray"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.example.vault.utilities.CeraProBoldTextView
+                                android:id="@+id/button_factorial"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:gravity="center"
+                                android:text="-/+"
+                                android:textColor="@color/black_color"
+                                android:textSize="@dimen/panel_2_button_text_port" />
+
+                        </RelativeLayout>
+
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_8"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/bgwhite"
+                            android:gravity="center"
+                            android:text="8"
+                            android:textColor="@color/black_color"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+
+
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/bgwhite"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="@color/black_color"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+
+
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+
+                            android:background="@drawable/bgwhite"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/black_color"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+
+
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_0"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/bgwhite"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/black_color"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+
+                        <!--                <com.example.vault.utilities.CeraProBoldTextView-->
+                        <!--                    android:id="@+id/button_0"-->
+                        <!--                    android:layout_width="fill_parent"-->
+                        <!--                    android:layout_height="0.0dip"-->
+                        <!--                          android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"-->
+                        <!--                    android:layout_weight="1.0"-->
+                        <!--                 -->
+                        <!--                    android:gravity="center"-->
+                        <!--                    android:text="0"-->
+                        <!--                    android:textColor="@color/White"-->
+                        <!--                    android:textSize="@dimen/panel_1_button_text_port" />-->
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+
+                        android:orientation="vertical">
+
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_exponent"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/bggray"
+                            android:gravity="center"
+                            android:text="%"
+                            android:textColor="@color/black_color"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+
+
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_9"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/bgwhite"
+                            android:gravity="center"
+                            android:text="9"
+                            android:textColor="@color/black_color"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+
+
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+
+                            android:background="@drawable/bgwhite"
+                            android:gravity="center"
+                            android:text="6"
+                            android:textColor="@color/black_color"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+
+
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+
+                            android:background="@drawable/bgwhite"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/black_color"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+
+                        <LinearLayout
+                            android:id="@+id/button_delete"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/bgdelete"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:text="-/+"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/panel_2_button_text_port" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_divide"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/bgblue"
+                            android:gravity="center"
+                            android:text="÷"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+
+
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_multiply"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+
+                            android:layout_weight="1.0"
+
+                            android:background="@drawable/bgblue"
+                            android:gravity="center"
+
+                            android:text="×"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+
+
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_subtract"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/bgblue"
+
+                            android:gravity="center"
+                            android:text="−"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+
+                        <!--  <com.example.vault.utilities.CeraProBoldTextView
+                              android:layout_width="fill_parent"
+                              android:layout_height="1.5px"
+                              android:background="@color/gray" />-->
+
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_add"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/bgblue"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+
+
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/button_equals"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/bgblue"
+                            android:gravity="center"
+                            android:text="="
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/panel_1_button_text_port" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/confirm_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#4DFFFFFF"
+            android:visibility="gone"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/fontmedium"
+                        android:gravity="center"
+                        android:text="@string/confirm_password"
+                        android:textColor="@color/black_color"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/font"
+                        android:gravity="center"
+                        android:text="@string/enteryour_password_again_n_the_prss_the_button"
+                        android:textColor="@color/black_color" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/a">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/btnokk" />
+
+                    <TextView
+                        android:id="@+id/ok_pass"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+

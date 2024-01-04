@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<CategoryInfo>
+  <CategoryName>Health And Hygiene</CategoryName>
+  <IconIndex>10</IconIndex>
+
+<Field>Card Title<IsSecured>false</IsSecured>
+</Field>
+<Field>ID Number<IsSecured>false</IsSecured>
+</Field>
+<Field>Blood Group<IsSecured>
+  false</IsSecured>
+</Field>
+<Field>Plan<IsSecured>false</IsSecured>
+</Field>
+<Field>Telephone<IsSecured>false</IsSecured>
+</Field>
+<Field>Infection Allergy<IsSecured>false</IsSecured>
+</Field>
+<Field>Health No.<IsSecured>false</IsSecured>
+</Field>
+<Field>Emergency No.<IsSecured>false</IsSecured>
+</Field>
+<Field>URL<IsSecured>false</IsSecured>
+</Field>
+<Field>User Name<IsSecured>false</IsSecured>
+</Field>
+<Field>Password<IsSecured>true</IsSecured>
+</Field>
+
+<Field>Custom1<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom2<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom3<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom4<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom5<IsSecured>false</IsSecured>
+</Field>
+
+</CategoryInfo>

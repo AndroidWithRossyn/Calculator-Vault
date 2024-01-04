@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/White">
+
+        <LinearLayout
+            android:id="@+id/ll_iv_notesFolder"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/ll_thumimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5">
+                <ImageView
+                    android:id="@+id/colorBorder"
+                    android:layout_width="5.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5.0dip"
+                    android:layout_marginTop="2.0dip" />
+
+
+                <ImageView
+                    android:id="@+id/playthumbImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="4.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="4.0dip"
+                    android:scaleType="centerInside" />
+                <ImageView
+                    android:id="@+id/iv_notesFolder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="15dp"
+                    android:scaleType="centerInside" />
+
+                <ImageView
+                    android:id="@+id/iv_album_thumbnil1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip" />
+
+                <ImageView
+                    android:id="@+id/iv_album_thumbnil"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_textAlbumName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_FolderName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="6.0dip"
+                        android:fontFamily="@font/fontmedium"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="Photos sfsfdf"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/black_color"
+                        android:textSize="17.0sp" />
+                    <TextView
+                        android:id="@+id/tv_NoteContent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="0.0dip"
+                        android:fontFamily="@font/font"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="Photos sfsfdf"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/black_color"
+                        android:textSize="13.0sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_DateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6.0dip"
+                        android:gravity="left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_NoteFolderDate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:fontFamily="@font/font"
+                            android:gravity="center_vertical"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="Date: "
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:textColor="@color/Color_Secondary_Font"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@+id/tv_NoteFolderTime"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginTop="0.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:fontFamily="@font/font"
+                            android:gravity="center_vertical"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="Time: "
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:textColor="@color/Color_Secondary_Font"
+                            android:textSize="13.0sp" />
+                        <TextView
+                            android:id="@+id/tv_noteFolder_size"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginTop="0.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:fontFamily="@font/font"
+                            android:gravity="center_vertical"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="Size: "
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:textColor="@color/Color_Secondary_Font"
+                            android:textSize="13.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_noteFolder_count"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/bgblue">
+
+                    <TextView
+                        android:id="@+id/tv_NotesCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/fontmedium"
+                        android:gravity="center"
+                        android:text="10"
+                        android:textColor="@color/White" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_selection"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/album_grid_item_boarder_unselect"
+            android:orientation="vertical"
+            android:padding="1.5dip" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

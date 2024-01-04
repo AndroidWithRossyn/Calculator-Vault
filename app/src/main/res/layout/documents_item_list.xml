@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_thumimage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ColorWhite">
+
+                <ImageView
+                    android:id="@+id/iv_album_thumbnil1"
+                    android:layout_width="65.0dip"
+                    android:layout_height="65.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_marginTop="2.0dip"
+                    android:layout_marginRight="3.0dip"
+                    android:paddingTop="3.0dip"
+                    android:paddingBottom="2.0dip" />
+
+                <ImageView
+                    android:id="@+id/iv_album_thumbnil"
+                    android:layout_width="65.0dip"
+                    android:layout_height="65.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:paddingTop="3.0dip"
+                    android:paddingBottom="2.0dip" />
+
+                <ImageView
+                    android:id="@+id/thumbImage"
+                    android:layout_width="65.0dip"
+                    android:layout_height="65.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:background="@drawable/ic_document_list_empty_icon"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/ll_textAlbumName"
+                    android:layout_width="220.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_toRightOf="@+id/iv_album_thumbnil1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textAlbumName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5.0dip"
+                        android:fontFamily="@font/fontmedium"
+                        android:layout_marginTop="6.0dip"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="Document sfsfdf"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/Color_Menu_Thumb_Font"
+                        android:textSize="17.0sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_selection"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/album_grid_item_boarder_unselect"
+                android:orientation="vertical" />
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

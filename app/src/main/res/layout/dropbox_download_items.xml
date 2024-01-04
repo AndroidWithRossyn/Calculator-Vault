@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_menu_cloud_photo_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginBottom="15.0dip"
+            android:layout_weight="0.6"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="110.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.0dip"
+                android:layout_weight="1.0"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblFolderName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1.0dip"
+                    android:singleLine="false"
+                    android:text="\ 1234567891234567"
+                    android:textColor="@color/Color_Secondary_Font"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/lblUploadSubject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1.0dip"
+                    android:singleLine="true"
+                    android:text="Subject Upload = 0"
+                    android:textColor="@color/Color_Secondary_Font"
+                    android:textSize="8.0sp" />
+
+                <TextView
+                    android:id="@+id/lblDownloadSubject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Subject Download = 0"
+                    android:textColor="@color/Color_Secondary_Font"
+                    android:textSize="8.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imagestatusitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="5.0dip" />
+
+        <ImageView
+            android:id="@+id/imagesyncitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/spring_arrow" />
+    </LinearLayout>
+</LinearLayout>

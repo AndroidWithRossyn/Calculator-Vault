@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<CategoryInfo>
+  <CategoryName>E-Commerce</CategoryName>
+  <IconIndex>9</IconIndex>
+
+<Field>Card Name<IsSecured>false</IsSecured>
+</Field>
+<Field>First Name<IsSecured>false</IsSecured>
+</Field>
+<Field>User Name<IsSecured>false</IsSecured>
+</Field>
+<Field>Password<IsSecured>true</IsSecured>
+</Field>
+<Field>Email<IsSecured>false</IsSecured>
+</Field>
+<Field>Phone No.<IsSecured>false</IsSecured>
+</Field>
+<Field>Address<IsSecured>false</IsSecured>
+</Field>
+<Field>City<IsSecured>false</IsSecured>
+</Field>
+
+<Field>Custom1<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom2<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom3<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom4<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom5<IsSecured>false</IsSecured>
+</Field>
+
+</CategoryInfo>

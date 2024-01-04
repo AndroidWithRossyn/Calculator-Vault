@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_background"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_bg_color_with_boarder"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lbladdcontactgroup"
+            android:layout_width="wrap_content"
+
+            android:fontFamily="@font/font"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:text="@string/tell_a_friend_title"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDialogCancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/btn_cross_share_dialog" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="25.0dip"
+            android:src="@drawable/btn_popup_email" />
+
+        <ImageView
+            android:id="@+id/ivfacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="25.0dip"
+            android:src="@drawable/btn_popup_fb" />
+
+        <ImageView
+            android:id="@+id/ivinsta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="25.0dip"
+            android:src="@drawable/btn_popup_insta" />
+
+        <ImageView
+            android:id="@+id/ivtwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="25.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:src="@drawable/btn_popup_twitter" />
+    </LinearLayout>
+</LinearLayout>

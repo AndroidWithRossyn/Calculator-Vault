@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="250.0dip" android:width="250.0dip" android:viewportWidth="550.0" android:viewportHeight="550.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:name="Shape 189" android:fillColor="#ff9b9a9a" android:pathData="m405.2 225.1v17.3h-246.2v-17.3zm0 52v17.3h-246.2v-17.3zm-2.2 47.2v17.3h-244v-17.3zm0 46.6v17.3h-244v-17.3zm-264.5 -264c-17.4 0 -31.6 14.1 -31.6 31.5v272.5c0 17.4 14.1 31.5 31.6 31.5h273.1c17.4 0 31.6 -14.1 31.6 -31.5v-272.5c0 -17.4 -14.1 -31.5 -31.6 -31.5z" />
+    <path android:name="Shape 189 copy" android:fillColor="#ff2f190c" android:pathData="m138.6 107h273.1c17.4 0 31.6 14.1 31.6 31.5v40.1h-336.2v-40.1c0 -17.4 14.1 -31.5 31.6 -31.5z" android:fillAlpha="0.15" />
+</vector>

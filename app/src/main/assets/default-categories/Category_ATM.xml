@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<CategoryInfo>
+    <CategoryName>ATM</CategoryName>
+    <IconIndex>2</IconIndex>
+    <Field>Card Name<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Bank Name<IsSecured>false</IsSecured>
+    </Field>
+    <Field>PIN<IsSecured>true</IsSecured>
+    </Field>
+    <Field>Holder Name<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Card Number<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Account Number<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Phone No.<IsSecured>false</IsSecured>
+    </Field>
+    <Field>URL<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom1<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom2<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom3<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom4<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom5<IsSecured>false</IsSecured>
+    </Field>
+</CategoryInfo>

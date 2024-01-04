@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_More_TopBaar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorAppTheme"
+        android:gravity="center_vertical"
+        android:paddingTop="4.0dip"
+        android:paddingBottom="4.0dip"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="left">
+
+            <ImageButton
+                android:id="@+id/ib_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_top_bar_icon"
+                android:onClick="btnBackonClick" />
+
+            <TextView
+                android:id="@+id/lbl_More_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="7.0dip"
+                android:text="@string/action_more"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/ColorWhite"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:background="@color/White"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:id="@+id/ll_more_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_hack_attempt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/app_list_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="10.0dip"
+                android:paddingTop="4.0dip"
+                android:paddingBottom="4.0dip">
+
+                <RelativeLayout
+                    android:id="@+id/ll_circle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/layout_circle_style">
+
+                    <ImageView
+                        android:id="@+id/ivhack_attempt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/try_icon" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvhack_attempt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/lbltryattempt"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/Color_Secondary_Font" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_rate_and_review"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/app_list_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="10.0dip"
+                android:paddingTop="4.0dip"
+                android:paddingBottom="4.0dip">
+
+                <RelativeLayout
+                    android:id="@+id/ll_circle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/layout_circle_style">
+
+                    <ImageView
+                        android:id="@+id/ivrate_and_review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/rate_review_icon" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvrate_and_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/lblrateandreview"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/Color_Secondary_Font" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tell_friend_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/app_list_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="10.0dip"
+                android:paddingTop="4.0dip"
+                android:paddingBottom="4.0dip">
+
+                <RelativeLayout
+                    android:id="@+id/ll_circle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/layout_circle_style">
+
+                    <ImageView
+                        android:id="@+id/ivtell_friend_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/tell_friend_icon" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvtell_friend_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/lblTellaFreiend"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/Color_Secondary_Font" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_license_agrement"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/app_list_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="10.0dip"
+                android:paddingTop="4.0dip"
+                android:paddingBottom="4.0dip">
+
+                <RelativeLayout
+                    android:id="@+id/ll_circle7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/layout_circle_style">
+
+                    <ImageView
+                        android:id="@+id/ivlicense_agrement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/license_icon" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvlicense_agrement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/lbllicense_agrement"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/Color_Secondary_Font" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_about"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:background="@drawable/app_list_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="10.0dip"
+                android:paddingTop="4.0dip"
+                android:paddingBottom="4.0dip">
+
+                <RelativeLayout
+                    android:id="@+id/ll_circle8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/layout_circle_style">
+
+                    <ImageView
+                        android:id="@+id/ivabout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/about_icon" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvabout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/lblabout"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/Color_Secondary_Font" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

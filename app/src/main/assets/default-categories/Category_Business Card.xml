@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<CategoryInfo>
+  <CategoryName>Business Card</CategoryName>
+  <IconIndex>4</IconIndex>
+
+<Field>Name<IsSecured>false</IsSecured>
+</Field>
+<Field>Company<IsSecured>false</IsSecured>
+</Field>
+<Field>Cell<IsSecured>false</IsSecured>
+</Field>
+<Field>Telephone<IsSecured>false</IsSecured>
+</Field>
+<Field>Email<IsSecured>false</IsSecured>
+</Field>
+<Field>Fax<IsSecured>false</IsSecured>
+</Field>
+<Field>Address<IsSecured>false</IsSecured>
+</Field>
+<Field>URL<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom1<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom2<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom3<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom4<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom5<IsSecured>false</IsSecured>
+</Field>
+</CategoryInfo>

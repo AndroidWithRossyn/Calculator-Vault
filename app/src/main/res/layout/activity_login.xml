@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ColorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ll_logosection"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ColorPrimary"
+                android:paddingTop="40.0dip">
+
+                <ImageView
+                    android:layout_width="80.0dip"
+                    android:layout_height="80.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/ic_launcher_foreground" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80.0dip"
+                    android:gravity="center"
+                    android:shadowColor="@color/transparent_Black_95"
+                    android:shadowDx="2.0"
+                    android:shadowDy="2.0"
+                    android:shadowRadius="2.0"
+                    android:text="@string/app_name"
+                    android:textColor="@color/ColorWhite"
+                    android:textSize="30.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_wrong_password_pin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:text="@string/lblsetting_SecurityCredentials_Setpasword_Tryagain"
+                    android:textAppearance="?android:textAppearance"
+                    android:textColor="@android:color/white"
+                    android:textSize="11.0sp"
+                    android:textStyle="normal"
+                    android:typeface="normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:layout_marginTop="6.0dip"
+                android:layout_marginRight="35.0dip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25.0dip"
+                    android:paddingTop="12.0dip"
+                    android:paddingRight="25.0dip"
+                    android:paddingBottom="5.0dip">
+
+                    <EditText
+                        android:id="@+id/txtPassword"
+                        android:layout_width="150.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:background="@drawable/underline_edittext"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:hint="@string/enter_password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxLength="17"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/ColorWhite"
+                        android:textColorHint="@color/transparent_white_20"
+                        android:textCursorDrawable="@drawable/mycursorshape"
+                        android:textSize="17.0sp">
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtforgotpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="2.0dip"
+                    android:text="@string/lblforgotpassword"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/ColorWhite"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_forgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginRight="10.0dip"
+                android:text="@string/lblsetting_SecurityCredentials_Setpasword_Tryagain"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@android:color/white"
+                android:textSize="11.0sp"
+                android:textStyle="normal"
+                android:typeface="normal" />
+
+            <FrameLayout
+                android:id="@+id/camera_preview"
+                android:layout_width="1.0px"
+                android:layout_height="1.0px"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/app_list_bg"
+    android:orientation="vertical"
+    android:paddingLeft="5.0dip"
+    android:paddingTop="5.0dip"
+    android:paddingRight="5.0dip"
+    android:paddingBottom="5.0dip">
+
+    <LinearLayout
+        android:id="@+id/ll_rename"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_rename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_photos_edit_rename_r" />
+
+        <TextView
+            android:id="@+id/tv_NotesFolderRename"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10.0dip"
+            android:layout_marginLeft="10dp"
+            android:text="Rename"
+            android:fontFamily="@font/font"
+            android:textColor="@color/black_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_del"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_photos_edit_rename_r" />
+
+        <TextView
+            android:id="@+id/tv_NotesFolderDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"            android:layout_marginLeft="10dp"
+
+            android:padding="10.0dip"
+            android:text="Delete"
+            android:fontFamily="@font/font"
+            android:textColor="@color/black_color" />
+    </LinearLayout>
+</LinearLayout>

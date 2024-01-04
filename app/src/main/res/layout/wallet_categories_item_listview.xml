@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_root"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_walletIcon"
+                        android:layout_width="70.0dip"
+                        android:layout_height="70.0dip"
+                        android:layout_margin="15.0dip"
+                        android:background="@drawable/selector_feature_item">
+
+                        <ImageView
+                            android:id="@+id/iv_walletCategoriesIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/atm_account1" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/ll_WalletCategoriesEntryCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10.0dip"
+                            android:background="@drawable/sidemenu_count_bg">
+
+                            <com.example.vault.utilities.CeraProBoldTextView
+                                android:id="@+id/tv_WalletCategoriesEntryCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_margin="5dp"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:maxEms="2"
+                                android:paddingLeft="1.0dip"
+                                android:paddingRight="1.0dip"
+                                android:singleLine="true"
+                                android:text="@string/zero"
+                                android:textAppearance="?android:textAppearanceLarge"
+                                android:textColor="@color/ColorWhite"
+                                android:textSize="12.0sp" />
+                        </RelativeLayout>
+
+                        <com.example.vault.utilities.CeraProBoldTextView
+                            android:id="@+id/tv_WalletTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5.0dip"
+                            android:fontFamily="@font/fontmedium"
+                            android:textColor="@color/black_color"
+                            android:textSize="16.0sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_div"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginTop="3.0dip"
+                    android:background="@color/ColorAppTheme"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_selection"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/album_grid_item_boarder_unselect"
+                android:orientation="vertical" />
+        </FrameLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

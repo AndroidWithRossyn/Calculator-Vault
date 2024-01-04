@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/White">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_list_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_walletContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_WalletTitleContainer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_WalletTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:padding="10.0dip"
+                        android:singleLine="true"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/black_color"
+                        android:textSize="15.0sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3.5dip"
+                    android:layout_marginRight="3.5dip"
+                    android:background="@color/White">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_walletIcon"
+                        android:layout_width="70.0dip"
+                        android:layout_height="70.0dip"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="12.0dip"
+                        android:background="@drawable/selector_feature_item">
+
+                        <ImageView
+                            android:id="@+id/iv_walletCategoriesIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="10.0dip"
+                            android:background="@drawable/atm_account" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_WalletCounter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5.0dip"
+                    android:orientation="horizontal"
+                    android:padding="5.0dip">
+
+                    <RelativeLayout
+                        android:id="@+id/ll_WalletCategoriesEntryCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/sidemenu_count_bg"
+                        android:paddingTop="2.0dip"
+                        android:paddingBottom="2.0dip">
+
+                        <TextView
+                            android:id="@+id/tv_WalletCategoriesEntryCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:maxEms="2"
+                            android:paddingLeft="1.0dip"
+                            android:paddingRight="1.0dip"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:textColor="@color/ColorWhite"
+                            android:textSize="12.0sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_selection"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/album_grid_item_boarder_unselect"
+            android:orientation="vertical" />
+    </FrameLayout>
+</RelativeLayout>

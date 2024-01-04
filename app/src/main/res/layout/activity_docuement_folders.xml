@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/fontmedium"
+                android:text="Documents"
+                android:textColor="@color/black_color"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_ActivityTopBaar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ColorAppTheme"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="left">
+
+                <ImageButton
+                    android:id="@+id/ib_back"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:background="@drawable/ic_top_back_icon"
+                    android:onClick="btnBackonClick" />
+
+                <TextView
+                    android:id="@+id/tvActivityTopBaar_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/lblFeature4"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/ColorWhite"
+                    android:textSize="22.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right">
+
+                <ImageButton
+                    android:id="@+id/ib_cloud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_topcloudicon"
+                    android:onClick="btnOnCloudClick" />
+
+                <ImageButton
+                    android:id="@+id/ib_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="14.0dip"
+                    android:background="@drawable/ic_more_top_bar_icon"
+                    android:onClick="btnOnMoreClick" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:id="@+id/ll_No_PhotoAlbums"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/ivNo_PhotoAlbum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10.0dip"
+                        android:background="@drawable/ic_documentsfolder_empty_thumb_icon" />
+
+                    <TextView
+                        android:id="@+id/txtNo_PhotoAlbum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivNo_PhotoAlbum"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="9.0dip"
+                        android:text="@string/lbl_Documents_Folder_no_Folder"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/Color_Secondary_Font"
+                        android:textSize="16.0sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_PhotoAlbums"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:orientation="vertical">
+
+                    <GridView
+                        android:id="@+id/AlbumsGalleryGrid"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="3.0dip"
+                        android:columnWidth="30.0dip"
+                        android:horizontalSpacing="10.0dip"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="1"
+                        android:scrollbars="none"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="10.0dip" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLoading"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center">
+
+                        <ProgressBar
+                            android:id="@+id/prbLoading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:indeterminate="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_Add_Album"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="bottom|center|right"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/btn_Add_Album"
+                                android:layout_width="72.0dip"
+                                android:layout_height="72.0dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="end|bottom|center"
+                                android:layout_marginRight="11.0dip"
+                                android:layout_marginBottom="16.0dip"
+                                android:onClick="fabClicked"
+                                app:backgroundTint="@color/blueclr"
+                                app:fab_backgroundColor="@color/blueclr"
+                                app:srcCompat="@drawable/ic_new_folder_r" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bnr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@color/black_color"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/ll_EditAlbum"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+
+            <LinearLayout
+                android:id="@+id/ll_rename_btn"
+                android:layout_width="0.0dip"
+                android:layout_height="50dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_bottom_baar_album"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/rename_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ic_photos_edit_rename" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_delete_btn"
+                android:layout_width="0.0dip"
+                android:layout_height="50dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_bottom_baar_album"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/delete_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:tint="@color/White"
+                    app:srcCompat="@drawable/ic_deletebtn" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

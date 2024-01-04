@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<CategoryInfo>
+    <CategoryName>General Purpose</CategoryName>
+    <IconIndex>8</IconIndex>
+    
+    <Field>Title<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom1<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom2<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom3<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom4<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom5<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom6<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom7<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom8<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom9<IsSecured>false</IsSecured>
+    </Field>
+    <Field>Custom10<IsSecured>false</IsSecured>
+    </Field>
+</CategoryInfo>

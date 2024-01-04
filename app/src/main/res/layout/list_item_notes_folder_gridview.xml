@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/White">
+
+        <LinearLayout
+            android:id="@+id/ll_iv_notesFolder"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/ll_thumimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5">
+                <ImageView
+                    android:id="@+id/colorBorder"
+                    android:layout_width="5.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5.0dip"
+                    android:layout_marginTop="2.0dip" />
+
+
+                <ImageView
+                    android:id="@+id/playthumbImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="4.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="4.0dip"
+                    android:scaleType="centerInside" />
+                <ImageView
+                    android:id="@+id/iv_notesFolder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="15dp"
+                    android:scaleType="centerInside" />
+
+                <ImageView
+                    android:id="@+id/iv_album_thumbnil1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip" />
+
+                <ImageView
+                    android:id="@+id/iv_album_thumbnil"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_textAlbumName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_FolderName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="6.0dip"
+                        android:fontFamily="@font/fontmedium"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="Photos sfsfdf"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/black_color"
+                        android:textSize="17.0sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_DateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6.0dip"
+                        android:gravity="left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_NoteFolderDate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:fontFamily="@font/font"
+                            android:gravity="center_vertical"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="Date: "
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:textColor="@color/Color_Secondary_Font"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@+id/tv_NoteFolderTime"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginTop="0.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:fontFamily="@font/font"
+                            android:gravity="center_vertical"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="Time: "
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:textColor="@color/Color_Secondary_Font"
+                            android:textSize="13.0sp" />
+                        <TextView
+                            android:id="@+id/tv_noteFolder_size"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginTop="0.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:fontFamily="@font/font"
+                            android:gravity="center_vertical"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="Size: "
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:textColor="@color/Color_Secondary_Font"
+                            android:textSize="13.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_noteFolder_count"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/bgblue">
+
+                    <TextView
+                        android:id="@+id/tv_NotesCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/fontmedium"
+                        android:gravity="center"
+                        android:text="10"
+                        android:textColor="@color/White" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_NoteContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_selection"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/album_grid_item_boarder_unselect"
+            android:orientation="vertical"
+            android:padding="1.5dip" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:background="@drawable/thumb_empty_layer">-->
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:background="@drawable/app_list_bg"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ll_iv_notesFolder"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ll_tv_FolderName"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_FolderName"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:marqueeRepeatLimit="marquee_forever"-->
+<!--                        android:padding="10.0dip"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:text="Notes"-->
+<!--                        android:textAppearance="?android:textAppearanceLarge"-->
+<!--                        android:textColor="@color/Color_Menu_Thumb_Font"-->
+<!--                        android:textSize="15.0sp" />-->
+<!--                </LinearLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="3.5dip"-->
+<!--                    android:layout_marginRight="3.5dip"-->
+<!--                    android:background="@color/ColorTumbnailbg">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/iv_notesFolder"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:layout_marginStart="10.0dip"-->
+<!--                        android:layout_marginTop="10.0dip"-->
+<!--                        android:layout_marginEnd="10.0dip"-->
+<!--                        android:layout_marginBottom="10.0dip"-->
+<!--                        android:background="@drawable/ic_notesfolder_thumb_icon" />-->
+<!--                </RelativeLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ll_noteDetails"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/colorBorder"-->
+<!--                        android:layout_width="5.0dip"-->
+<!--                        android:layout_height="fill_parent"-->
+<!--                        android:layout_margin="5.0dip"-->
+<!--                        android:layout_marginTop="2.0dip" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/ll_DateTime"-->
+<!--                        android:layout_width="0.0dip"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_margin="5.0dip"-->
+<!--                        android:layout_weight="1.7"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tv_NoteFolderDate"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:ellipsize="marquee"-->
+<!--                            android:gravity="start"-->
+<!--                            android:marqueeRepeatLimit="marquee_forever"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:text="Date: "-->
+<!--                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"-->
+<!--                            android:textColor="@color/Color_Secondary_Font"-->
+<!--                            android:textSize="9.0sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tv_NoteFolderTime"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:ellipsize="marquee"-->
+<!--                            android:gravity="start"-->
+<!--                            android:marqueeRepeatLimit="marquee_forever"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:text="Time: "-->
+<!--                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"-->
+<!--                            android:textColor="@color/Color_Secondary_Font"-->
+<!--                            android:textSize="9.0sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tv_noteFolder_size"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:layout_marginBottom="2.0dip"-->
+<!--                            android:text="Size"-->
+<!--                            android:textAppearance="?android:textAppearanceLarge"-->
+<!--                            android:textColor="@color/Color_Secondary_Font"-->
+<!--                            android:textSize="9.0sp" />-->
+<!--                    </LinearLayout>-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/rl_noteFolder_count"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginLeft="5.0dip"-->
+<!--                        android:layout_marginTop="15.0dip"-->
+<!--                        android:layout_marginRight="15.0dip"-->
+<!--                        android:layout_marginBottom="15.0dip"-->
+<!--                        android:background="@drawable/sidemenu_count_bg"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:paddingTop="3.0dip"-->
+<!--                        android:paddingBottom="3.0dip">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tv_NotesCount"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerHorizontal="true"-->
+<!--                            android:marqueeRepeatLimit="marquee_forever"-->
+<!--                            android:maxEms="2"-->
+<!--                            android:paddingLeft="1.0dip"-->
+<!--                            android:paddingRight="1.0dip"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:text="0"-->
+<!--                            android:textAppearance="?android:textAppearanceLarge"-->
+<!--                            android:textColor="@color/ColorWhite"-->
+<!--                            android:textSize="12.0sp" />-->
+<!--                    </RelativeLayout>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_NoteContent"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:visibility="gone" />-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ll_selection"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="fill_parent"-->
+<!--            android:background="@drawable/album_grid_item_boarder_unselect"-->
+<!--            android:orientation="vertical" />-->
+<!--    </FrameLayout>-->
+<!--</RelativeLayout>-->

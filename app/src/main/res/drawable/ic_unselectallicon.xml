@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="30.0dip" android:width="30.0dip" android:viewportWidth="66.0" android:viewportHeight="66.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:name="Shape 13 copy 2" android:fillColor="@color/iconColor" android:pathData="m22.57 13.14v5.04h43.71v-5.04zm-11.02 -2.13v8.01h-7.92v-8.01zm-10.56 -2.67v13.34h13.2v-13.34zm10.56 23.36v5.34h-5.28v-5.34zm11.02 0.42v5.04h44.44v-5.04zm-18.94 -3.09v10.68h10.56v-10.68zm8.96 21.93v4.28h-4.23v-4.28zm9.98 0.14v5.04h43.71v-5.04zm-16.3 -2.19v8.01h7.76v-8.01z" />
+</vector>

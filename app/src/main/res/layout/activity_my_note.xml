@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/Coloractivity_bg"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:contentInsetLeft="0.0dip"
+            app:contentInsetStart="0.0dip"
+            app:contentInsetStartWithNavigation="0.0dip">
+
+            <EditText
+                android:id="@+id/et_Notetitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Enter Title"
+                android:inputType="textNoSuggestions"
+                android:maxLength="20"
+                android:padding="5.0dip"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black_color"
+                android:textColorHint="@color/gray"
+                android:textSize="18.0sp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_NotesplayAudio"
+                android:layout_width="35.0dip"
+                android:layout_height="35.0dip"
+                android:layout_gravity="center"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/ic_play_icon"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_NotesRecordAudio"
+                android:layout_width="38.0dip"
+                android:layout_height="38.0dip"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/ic_recorder_icon" />
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/Color_Secondary_Font"
+                android:textSize="12.0sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/ll_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#33aac0ff"
+            android:fillViewport="true">
+
+            <com.example.vault.notes.util.LinedEditText
+                android:id="@+id/et_NoteContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:gravity="top" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_notesRecordingPlayer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent_black_color"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:weightSum="2.0">
+
+            <TextView
+                android:id="@+id/tv_recStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="00:00"
+                android:textColor="@color/ColorWhite" />
+
+            <TextView
+                android:id="@+id/tv_recEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="end"
+                android:text="00:00"
+                android:textColor="@color/ColorWhite" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:progress="50"
+                android:progressDrawable="@drawable/drawable_seekbar_progress"
+                android:thumb="@drawable/seekbar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10.0dip">
+
+            <ImageView
+                android:id="@+id/iv_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/selector_previous" />
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:background="@drawable/ic_play_circle_outline_black_24dp" />
+
+            <ImageView
+                android:id="@+id/iv_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/selector_next" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

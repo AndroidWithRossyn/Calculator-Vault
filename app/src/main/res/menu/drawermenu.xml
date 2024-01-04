@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Setting"
+            android:icon="@drawable/menusetting"
+            android:title="Setting" />
+        <item
+            android:id="@+id/nav_Try"
+            android:icon="@drawable/menutry_attempts"
+            android:title="Try Attempts" />
+        <item
+            android:id="@+id/nav_Tell"
+            android:icon="@drawable/menutell_friend"
+            android:visible="true"
+            android:title="Tell Friends" />
+        <item
+            android:id="@+id/nav_FeedBack"
+            android:icon="@drawable/menufeedback"
+            android:visible="true"
+            android:title="FeedBack" />
+        <item
+            android:id="@+id/nav_Privacy"
+            android:icon="@drawable/menuprivacy_policy"
+            android:title="Privacy Policy" />
+        <item
+            android:id="@+id/nav_Rate"
+            android:icon="@drawable/menurate_us"
+            android:visible="true"
+            android:title="Rate Us" />
+
+        <item
+            android:id="@+id/nav_Share"
+            android:icon="@drawable/menushare"
+            android:visible="false"
+            android:title="Share" />
+        <item
+            android:id="@+id/nav_About"
+            android:icon="@drawable/menuabout"
+            android:title="About" />
+    </group>
+
+    <!--    <item android:title="Communicate">-->
+    <!--        <menu>-->
+
+    <!--        </menu>-->
+    <!--    </item>-->
+
+</menu>

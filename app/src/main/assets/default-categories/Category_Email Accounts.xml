@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<CategoryInfo>
+  <CategoryName>Email Accounts</CategoryName>
+  <IconIndex>6</IconIndex>
+
+<Field>Title<IsSecured>false</IsSecured>
+</Field>
+<Field>Type<IsSecured>false</IsSecured>
+</Field>
+<Field>User ID<IsSecured>false</IsSecured>
+</Field>
+<Field>Password<IsSecured>true</IsSecured>
+</Field>
+<Field>Website<IsSecured>false</IsSecured>
+</Field>
+<Field>Server<IsSecured>false</IsSecured>
+</Field>
+<Field>Port<IsSecured>false</IsSecured>
+</Field>
+<Field>Uses SSL<IsSecured>false</IsSecured>
+</Field>
+<Field>Authentication Method<IsSecured>false</IsSecured>
+</Field>
+<Field>Provider<IsSecured>false</IsSecured>
+</Field>
+<Field>Note<IsSecured>false</IsSecured>
+</Field>
+
+<Field>Custom1<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom2<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom3<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom4<IsSecured>false</IsSecured>
+</Field>
+<Field>Custom5<IsSecured>false</IsSecured>
+</Field>
+</CategoryInfo>

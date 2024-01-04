@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/clear_chache_on_exit"
+            android:title="clear chache on exit"
+            android:visible="true"
+            app:showAsAction="ifRoom|withText" />
+        <item
+            android:id="@+id/clear_history_on_exit"
+            android:title="clear history on exit"
+            android:visible="true"
+            app:showAsAction="ifRoom|withText" />
+        <item
+            android:id="@+id/clear_cookies_on_exit"
+            android:title="clear cookies on exit"
+            android:visible="true"
+            app:showAsAction="ifRoom|withText" />
+        <item
+            android:id="@+id/save_forms_data"
+            android:title="save form data"
+            android:visible="true"
+            app:showAsAction="ifRoom|withText" />
+    </group>
+    <item
+        android:id="@+id/clear_chache"
+        android:title="clear cache"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/clear_history"
+        android:title="clear history"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/clear_cookies"
+        android:title="clear cookies"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+</menu>
